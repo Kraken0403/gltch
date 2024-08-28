@@ -1,0 +1,55 @@
+@import '../assets/styles/variables.scss';
+
+
+.home-services {
+    background-color: $black;
+    padding: 20rem 0;
+
+    .hs-wrapper {
+        width: 100%;
+    }
+
+    .hs-card-wrapper {
+        display: flex;
+        flex-direction: row;
+        gap: 4rem;
+        flex: 1/3;
+        .hs-card {
+            background-color: $dark;
+            display: flex;
+            flex-direction: column;
+            padding: 3.2rem;
+            border-radius: 2rem;
+            h2 {
+                color: $accent;
+                font-size: 2.4rem;
+                margin-bottom: 4rem;
+            }
+
+            .hs-detail {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                p{
+                    padding-right: 2rem;
+                    color: $lighttext;
+                    font-size: 14px;
+                }
+
+                a {
+                    width: 8.8rem;
+                    background-color: #323232;
+                    border-radius: 300px;
+                    padding: 10px 30px;
+                    text-align: center;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    img {
+                        width: auto
+                    }
+                }
+            }
+        }
+    }
+}

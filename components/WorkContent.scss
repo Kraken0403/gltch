@@ -1,0 +1,67 @@
+@import '../assets/styles/variables.scss';
+
+.wc {
+    background-color: $black;
+    width: 100%;
+
+    .wc-filters {
+        display: flex;
+        flex-direction: column;
+        h4 {
+            color: $white;
+            font-size: 2.4rem;
+            margin-bottom: 25px;
+        }
+        .filter-tabs{
+            display: flex;
+            gap: 4rem;
+            padding-bottom: 10rem;
+            .filter-tab {
+                cursor: pointer;
+                padding: 15px 40px;
+                border-radius: 30px;
+                border: 1px solid white;
+                p{
+                    color: $white;
+                    font-size: 1.8rem;
+                }
+            }
+        }
+    }
+    &-main {
+        // padding-top: 10rem;
+        padding-bottom: 17rem;
+        &-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20rem 10rem;
+
+
+            .wc-card {
+                width: calc(50% - 5rem);
+    
+                .wc-image {
+                    width: 100%;
+                    height: 45rem;
+                    position: relative;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+                h2{
+                    color: $white;
+                    font-size: 2.4rem;
+                    margin: 3rem 0 1rem 0;
+                }
+    
+                p{
+                    font-size: 1.8rem;
+                    color: $lighttext;
+                    text-transform: capitalize;
+                }
+            }
+        }
+    }
+}

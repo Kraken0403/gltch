@@ -1,0 +1,25 @@
+@import '../assets/styles/variables.scss';
+
+.clients {
+    background-color: $dark;
+    width: 100%;
+    padding-top: 13rem;
+    padding-bottom: 17rem;
+    &-wrapper {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .clients-logo{
+        display: flex;
+        justify-content: space-between;
+
+       .client-logo {
+            max-width: 15%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+       }
+    }
+}

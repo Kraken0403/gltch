@@ -1,0 +1,74 @@
+@import '../assets/styles/variables.scss';
+.footer {
+    width: 100%;
+    background-color: $black;
+    padding: 10rem 0 0;
+    &-wrapper {
+        padding-bottom: 10rem;
+      .footer-anim {
+        position: relative;
+        text-align: center;
+        img {
+            max-width: 44%;
+        }
+        h2 {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            color: $accent;
+            font-size: 7rem;
+            width: 100%;
+            span{
+                color: $white;
+            }
+        }
+      }  
+    }
+
+    .footer-main {
+        padding: 10rem 8rem;
+        width: 100%;
+
+        .fm-row{
+            display: flex;
+            justify-content: space-between;
+
+            .fm-logo {
+                width: 35%;
+                
+                img{
+                    width: 195px;
+                }
+                p{
+                    padding-top: 24px;
+                    color: $lightexttwo;
+                    font-size: 16px;
+                    width: 65%;
+                }
+            }
+
+            .fm-socials {
+                width: 20%;
+                padding-left: 30px;
+                h4 {
+                    color: $white;
+                }
+            }
+
+            .fm-links{
+                width: 20%;
+                color: $white;
+                padding-left: 30px;
+            }
+
+            .fm-touch {
+                padding-left: 30px;
+                width: 25%;
+                h2 {
+                    color: white;
+                }
+            }
+        }
+    }
+}
